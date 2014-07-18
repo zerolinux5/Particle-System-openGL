@@ -57,6 +57,7 @@
 		EA9CC73F1979D25B005BB3E1 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		EA9CC7411979D280005BB3E1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		EA9CC7421979D280005BB3E1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EA9CC7441979D3D2005BB3E1 /* EmitterTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmitterTemplate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 				EA9CC73F1979D25B005BB3E1 /* MainStoryboard.storyboard */,
 				EA9CC7411979D280005BB3E1 /* MainViewController.h */,
 				EA9CC7421979D280005BB3E1 /* MainViewController.m */,
+				EA9CC7441979D3D2005BB3E1 /* EmitterTemplate.h */,
 			);
 			path = GLParticles1;
 			sourceTree = "<group>";
