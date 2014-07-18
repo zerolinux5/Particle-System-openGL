@@ -19,6 +19,10 @@
 		EA9CC7281979D1E7005BB3E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9CC7101979D1E7005BB3E1 /* UIKit.framework */; };
 		EA9CC7301979D1E7005BB3E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA9CC72E1979D1E7005BB3E1 /* InfoPlist.strings */; };
 		EA9CC7321979D1E7005BB3E1 /* GLParticles1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC7311979D1E7005BB3E1 /* GLParticles1Tests.m */; };
+		EA9CC73C1979D224005BB3E1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9CC73B1979D224005BB3E1 /* OpenGLES.framework */; };
+		EA9CC73E1979D22F005BB3E1 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9CC73D1979D22F005BB3E1 /* GLKit.framework */; };
+		EA9CC7401979D25B005BB3E1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9CC73F1979D25B005BB3E1 /* MainStoryboard.storyboard */; };
+		EA9CC7431979D280005BB3E1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC7421979D280005BB3E1 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,11 @@
 		EA9CC72D1979D1E7005BB3E1 /* GLParticles1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLParticles1Tests-Info.plist"; sourceTree = "<group>"; };
 		EA9CC72F1979D1E7005BB3E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA9CC7311979D1E7005BB3E1 /* GLParticles1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLParticles1Tests.m; sourceTree = "<group>"; };
+		EA9CC73B1979D224005BB3E1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EA9CC73D1979D22F005BB3E1 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		EA9CC73F1979D25B005BB3E1 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EA9CC7411979D280005BB3E1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EA9CC7421979D280005BB3E1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9CC73E1979D22F005BB3E1 /* GLKit.framework in Frameworks */,
+				EA9CC73C1979D224005BB3E1 /* OpenGLES.framework in Frameworks */,
 				EA9CC70F1979D1E7005BB3E1 /* CoreGraphics.framework in Frameworks */,
 				EA9CC7111979D1E7005BB3E1 /* UIKit.framework in Frameworks */,
 				EA9CC70D1979D1E7005BB3E1 /* Foundation.framework in Frameworks */,
@@ -96,6 +107,8 @@
 		EA9CC70B1979D1E7005BB3E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA9CC73D1979D22F005BB3E1 /* GLKit.framework */,
+				EA9CC73B1979D224005BB3E1 /* OpenGLES.framework */,
 				EA9CC70C1979D1E7005BB3E1 /* Foundation.framework */,
 				EA9CC70E1979D1E7005BB3E1 /* CoreGraphics.framework */,
 				EA9CC7101979D1E7005BB3E1 /* UIKit.framework */,
@@ -111,6 +124,9 @@
 				EA9CC71C1979D1E7005BB3E1 /* AppDelegate.m */,
 				EA9CC71E1979D1E7005BB3E1 /* Images.xcassets */,
 				EA9CC7131979D1E7005BB3E1 /* Supporting Files */,
+				EA9CC73F1979D25B005BB3E1 /* MainStoryboard.storyboard */,
+				EA9CC7411979D280005BB3E1 /* MainViewController.h */,
+				EA9CC7421979D280005BB3E1 /* MainViewController.m */,
 			);
 			path = GLParticles1;
 			sourceTree = "<group>";
@@ -219,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9CC7401979D25B005BB3E1 /* MainStoryboard.storyboard in Resources */,
 				EA9CC7171979D1E7005BB3E1 /* InfoPlist.strings in Resources */,
 				EA9CC71F1979D1E7005BB3E1 /* Images.xcassets in Resources */,
 			);
@@ -240,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9CC71D1979D1E7005BB3E1 /* AppDelegate.m in Sources */,
+				EA9CC7431979D280005BB3E1 /* MainViewController.m in Sources */,
 				EA9CC7191979D1E7005BB3E1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
