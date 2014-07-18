@@ -27,6 +27,7 @@
 		EA9CC7481979D5E2005BB3E1 /* Emitter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = EA9CC7471979D5E2005BB3E1 /* Emitter.fsh */; };
 		EA9CC74B1979D8A4005BB3E1 /* EmitterShader.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC74A1979D8A4005BB3E1 /* EmitterShader.m */; };
 		EA9CC74E1979D8FF005BB3E1 /* ShaderProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC74D1979D8FF005BB3E1 /* ShaderProcessor.mm */; };
+		EA9CC7501979DD53005BB3E1 /* texture_32.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9CC74F1979DD53005BB3E1 /* texture_32.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		EA9CC74A1979D8A4005BB3E1 /* EmitterShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmitterShader.m; sourceTree = "<group>"; };
 		EA9CC74C1979D8FF005BB3E1 /* ShaderProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProcessor.h; sourceTree = "<group>"; };
 		EA9CC74D1979D8FF005BB3E1 /* ShaderProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShaderProcessor.mm; sourceTree = "<group>"; };
+		EA9CC74F1979DD53005BB3E1 /* texture_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_32.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		EA9CC7121979D1E7005BB3E1 /* GLParticles1 */ = {
 			isa = PBXGroup;
 			children = (
+				EA9CC74F1979DD53005BB3E1 /* texture_32.png */,
 				EA9CC71B1979D1E7005BB3E1 /* AppDelegate.h */,
 				EA9CC71C1979D1E7005BB3E1 /* AppDelegate.m */,
 				EA9CC71E1979D1E7005BB3E1 /* Images.xcassets */,
@@ -253,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9CC7501979DD53005BB3E1 /* texture_32.png in Resources */,
 				EA9CC7461979D5D5005BB3E1 /* Emitter.vsh in Resources */,
 				EA9CC7401979D25B005BB3E1 /* MainStoryboard.storyboard in Resources */,
 				EA9CC7171979D1E7005BB3E1 /* InfoPlist.strings in Resources */,

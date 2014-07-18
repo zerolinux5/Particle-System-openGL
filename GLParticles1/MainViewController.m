@@ -46,6 +46,9 @@
     // Load Shader
     [self loadShader];
     
+    // Load Texture
+    [self loadTexture:@"texture_32.png"];
+    
     // Load Particle System
     [self loadParticles];
     [self loadEmitter];
@@ -59,6 +62,10 @@
     glClearColor(0.30f, 0.74f, 0.20f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     
+    // Set the blending function (normal w/ premultiplied alpha)
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    
     // 1
     // Create Projection Matrix
     float aspectRatio = view.frame.size.width / view.frame.size.height;
@@ -70,6 +77,7 @@
     glUniform1f(self.emitterShader.uK, emitter.k);
     glUniform3f(self.emitterShader.uColor, emitter.color[0], emitter.color[1], emitter.color[2]);
     glUniform1f(self.emitterShader.uTime, (_timeCurrent/_timeMax));
+    glUniform1i(self.emitterShader.uTexture, 0);
     
     // 3
     // Attributes
@@ -149,6 +157,23 @@
         _timeDirection = 1;
     
     _timeCurrent += _timeDirection * self.timeSinceLastUpdate;
+}
+
+#pragma mark - Load Texture
+
+- (void)loadTexture:(NSString *)fileName
+{
+    NSDictionary* options = @{[NSNumber numberWithBool:YES] : GLKTextureLoaderOriginBottomLeft};
+    
+    NSError* error;
+    NSString* path = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+    GLKTextureInfo* texture = [GLKTextureLoader textureWithContentsOfFile:path options:options error:&error];
+    if(texture == nil)
+    {
+        NSLog(@"Error loading file: %@", [error localizedDescription]);
+    }
+    
+    glBindTexture(GL_TEXTURE_2D, texture.name);
 }
 
 @end

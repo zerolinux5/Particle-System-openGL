@@ -28,6 +28,8 @@
 
 @property (readwrite) GLint uTime;
 
+@property (readwrite) GLint uTexture;
+
 // Methods
 - (void)loadShader;
 
