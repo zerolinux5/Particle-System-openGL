@@ -24,10 +24,12 @@
     
     // Attributes
     self.aTheta = glGetAttribLocation(self.program, "aTheta");
+    self.aShade = glGetAttribLocation(self.program, "aShade");
     
     // Uniforms
     self.uProjectionMatrix = glGetUniformLocation(self.program, "uProjectionMatrix");
     self.uK = glGetUniformLocation(self.program, "uK");
+    self.uColor = glGetUniformLocation(self.program, "uColor");
 }
 
 @end

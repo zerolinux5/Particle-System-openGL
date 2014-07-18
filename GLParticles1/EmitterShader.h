@@ -20,6 +20,12 @@
 @property (readwrite) GLint uProjectionMatrix;
 @property (readwrite) GLint uK;
 
+// with other attribute handles
+@property (readwrite) GLint aShade;
+
+// with other uniform handles
+@property (readwrite) GLint uColor;
+
 // Methods
 - (void)loadShader;
 
