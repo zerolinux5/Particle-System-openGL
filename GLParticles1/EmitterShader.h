@@ -26,6 +26,8 @@
 // with other uniform handles
 @property (readwrite) GLint uColor;
 
+@property (readwrite) GLint uTime;
+
 // Methods
 - (void)loadShader;
 
