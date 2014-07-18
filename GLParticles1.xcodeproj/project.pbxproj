@@ -23,6 +23,10 @@
 		EA9CC73E1979D22F005BB3E1 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9CC73D1979D22F005BB3E1 /* GLKit.framework */; };
 		EA9CC7401979D25B005BB3E1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9CC73F1979D25B005BB3E1 /* MainStoryboard.storyboard */; };
 		EA9CC7431979D280005BB3E1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC7421979D280005BB3E1 /* MainViewController.m */; };
+		EA9CC7461979D5D5005BB3E1 /* Emitter.vsh in Resources */ = {isa = PBXBuildFile; fileRef = EA9CC7451979D5D5005BB3E1 /* Emitter.vsh */; };
+		EA9CC7481979D5E2005BB3E1 /* Emitter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = EA9CC7471979D5E2005BB3E1 /* Emitter.fsh */; };
+		EA9CC74B1979D8A4005BB3E1 /* EmitterShader.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC74A1979D8A4005BB3E1 /* EmitterShader.m */; };
+		EA9CC74E1979D8FF005BB3E1 /* ShaderProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA9CC74D1979D8FF005BB3E1 /* ShaderProcessor.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,12 @@
 		EA9CC7411979D280005BB3E1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		EA9CC7421979D280005BB3E1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		EA9CC7441979D3D2005BB3E1 /* EmitterTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmitterTemplate.h; sourceTree = "<group>"; };
+		EA9CC7451979D5D5005BB3E1 /* Emitter.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Emitter.vsh; sourceTree = "<group>"; };
+		EA9CC7471979D5E2005BB3E1 /* Emitter.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Emitter.fsh; sourceTree = "<group>"; };
+		EA9CC7491979D8A4005BB3E1 /* EmitterShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmitterShader.h; sourceTree = "<group>"; };
+		EA9CC74A1979D8A4005BB3E1 /* EmitterShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmitterShader.m; sourceTree = "<group>"; };
+		EA9CC74C1979D8FF005BB3E1 /* ShaderProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderProcessor.h; sourceTree = "<group>"; };
+		EA9CC74D1979D8FF005BB3E1 /* ShaderProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShaderProcessor.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +139,12 @@
 				EA9CC7411979D280005BB3E1 /* MainViewController.h */,
 				EA9CC7421979D280005BB3E1 /* MainViewController.m */,
 				EA9CC7441979D3D2005BB3E1 /* EmitterTemplate.h */,
+				EA9CC7451979D5D5005BB3E1 /* Emitter.vsh */,
+				EA9CC7471979D5E2005BB3E1 /* Emitter.fsh */,
+				EA9CC7491979D8A4005BB3E1 /* EmitterShader.h */,
+				EA9CC74A1979D8A4005BB3E1 /* EmitterShader.m */,
+				EA9CC74C1979D8FF005BB3E1 /* ShaderProcessor.h */,
+				EA9CC74D1979D8FF005BB3E1 /* ShaderProcessor.mm */,
 			);
 			path = GLParticles1;
 			sourceTree = "<group>";
@@ -237,9 +253,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9CC7461979D5D5005BB3E1 /* Emitter.vsh in Resources */,
 				EA9CC7401979D25B005BB3E1 /* MainStoryboard.storyboard in Resources */,
 				EA9CC7171979D1E7005BB3E1 /* InfoPlist.strings in Resources */,
 				EA9CC71F1979D1E7005BB3E1 /* Images.xcassets in Resources */,
+				EA9CC7481979D5E2005BB3E1 /* Emitter.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +278,9 @@
 			files = (
 				EA9CC71D1979D1E7005BB3E1 /* AppDelegate.m in Sources */,
 				EA9CC7431979D280005BB3E1 /* MainViewController.m in Sources */,
+				EA9CC74E1979D8FF005BB3E1 /* ShaderProcessor.mm in Sources */,
 				EA9CC7191979D1E7005BB3E1 /* main.m in Sources */,
+				EA9CC74B1979D8A4005BB3E1 /* EmitterShader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
